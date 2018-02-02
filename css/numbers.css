@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+	line-height: 1;
+  text-align: center;
+  color: #000;
+	cursor: pointer;
+	text-shadow: white 5px 5px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app {
+	padding-top: 100px;
+}
+
+#question {
+	font-size: 50px;
+	padding: 20px 0;
+	margin-bottom: -20px;
+	z-index: 1;
+	position: relative;
+}
+
+#answer {
+	font-size: 200px;
+}
+
+body {
+	transition: all 0.3s;
+}
+
+body[data-colour="red"] {
+	background-color: red;
+}
+
+body[data-colour="orange"] {
+	background-color: orange;
+}
+
+body[data-colour="yellow"] {
+	background-color: yellow;
+}
+
+body[data-colour="green"] {
+	background-color: green;
+}
+
+body[data-colour="blue"] {
+	background-color: blue;
+}
+
+body[data-colour="indigo"] {
+	background-color: indigo;
+}
+
+body[data-colour="violet"] {
+	background-color: violet;
+}
+
+body[data-colour="red"],
+body[data-colour="green"],
+body[data-colour="blue"],
+body[data-colour="indigo"] {
+	color: white;
+	text-shadow: black 5px 5px;
+}
