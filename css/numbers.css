@@ -5,11 +5,9 @@
 
 body {
   font-family: sans-serif;
-	line-height: 1;
   text-align: center;
   color: #000;
-	cursor: pointer;
-	text-shadow: white 5px 5px;
+	text-shadow: white 5px 5px 5px;
 }
 
 html,
@@ -17,20 +15,57 @@ body {
   height: 100%;
 }
 
-#app {
-	padding-top: 100px;
+select {
+	margin: 10px;
 }
 
 #question {
-	font-size: 50px;
-	padding: 20px 0;
-	margin-bottom: -20px;
-	z-index: 1;
-	position: relative;
+	font-size: 100px;
+	padding-top: 100px;
 }
 
 #answer {
-	font-size: 200px;
+	font-size: 300px;
+}
+
+#base-up,
+#base-down,
+#multiplier-up,
+#multiplier-down {
+	width: 50%;
+	position: fixed;
+}
+
+#base-up,
+#multiplier-up {
+	top: 0;
+	bottom: 50%;
+}
+
+#base-down,
+#multiplier-down {
+	top: 50%;
+	bottom: 0;
+}
+
+#multiplier-up,
+#multiplier-down {
+	left: 50%;
+	right: 100%;
+}
+
+#base-up,
+#base-down {
+	left: 0;
+	right: 50%;
+}
+
+#up {
+	left: 50%;
+}
+
+select {
+	cursor: pointer;
 }
 
 body {
@@ -70,5 +105,5 @@ body[data-colour="green"],
 body[data-colour="blue"],
 body[data-colour="indigo"] {
 	color: white;
-	text-shadow: black 5px 5px;
+	text-shadow: black 5px 5px 5px;
 }
