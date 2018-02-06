@@ -1,3 +1,3 @@
 # numbers.jamesrock.me
 
-numbers for Harris
+for Harris
