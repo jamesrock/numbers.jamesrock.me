@@ -5,6 +5,7 @@
 		var
 		base = 1,
 		multiplier = 1,
+		step = 1,
 		calculate = function() {
 			return operations[operation].calculate(base, multiplier);
 		},
@@ -106,22 +107,22 @@
 			switch(e.target.id) {
 				case 'multiplier-up':
 
-					multiplier ++;
+					multiplier += step;
 
 				break;
 				case 'multiplier-down':
 
-					multiplier --;
+					multiplier -= step;
 
 				break;
 				case 'base-up':
 
-					base ++;
+					base += step;
 
 				break;
 				case 'base-down':
 
-					base --;
+					base -= step;
 
 				break;
 			}

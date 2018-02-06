@@ -8,6 +8,7 @@ body {
   text-align: center;
   color: #000;
 	text-shadow: white 5px 5px 5px;
+	font-size: 100px;
 }
 
 html,
@@ -20,12 +21,11 @@ select {
 }
 
 #question {
-	font-size: 100px;
 	padding-top: 100px;
 }
 
 #answer {
-	font-size: 300px;
+	font-size: 200%;
 }
 
 #base-up,
@@ -107,4 +107,18 @@ body[data-colour="blue"],
 body[data-colour="indigo"] {
 	color: white;
 	text-shadow: black 5px 5px 5px;
+}
+
+@media (width: 768px), (height: 1024px) {
+
+	/* iPad mini */
+
+	body {
+		font-size: 120px;
+	}
+
+	#question {
+		padding-top: 260px;
+	}
+
 }
