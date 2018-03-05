@@ -26,23 +26,6 @@
 			});
 			document.body.setAttribute('data-colour', colours[colour]);
 		},
-		createSelect = function(items) {
-
-			var
-			out = document.createElement('select');
-
-			items.forEach(function(item, index) {
-
-				var option = document.createElement('option');
-				option.innerHTML = item.label;
-				option.value = index;
-				out.appendChild(option);
-
-			});
-
-			return out;
-
-		},
 		incrementColour = function() {
 
 			if(colour===colours.length-1) {
